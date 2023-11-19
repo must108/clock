@@ -46,6 +46,8 @@
                 if(d.getHours() > 12){
                     checker = true;
                     return d.getHours() - 12;
+                } else if (d.getHours() == 0){
+                    return d.getHours() + 12;
                 } else {
                     return d.getHours();
                 }
